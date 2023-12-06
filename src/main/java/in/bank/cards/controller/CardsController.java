@@ -29,8 +29,4 @@ public class CardsController {
 		return cardsRes;
 	}
 
-	public void another() {
-
-	}
-
 }
