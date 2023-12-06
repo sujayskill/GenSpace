@@ -22,5 +22,11 @@ public class CardsController {
 		List<Cards> cards = cardsRepository.findByCustomerId(customer.getCustomerId());
 		return cards;
 	}
+	
+	@PostMapping("/SaveCards")
+	public Cards SaveCardDetails(@RequestBody Cards cards) {
+		Cards cardsRes = cardsRepository.save(cards);
+		return cardsRes;
+	}
 
 }
